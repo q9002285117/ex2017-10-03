@@ -19,8 +19,9 @@ public class MainFrame extends JFrame {
     public MainFrame(){
         init();
     }private void init(){
-        this.setBounds(100,100,500,300);
+        this.setBounds(100,100,500,400);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setTitle("凱薩加密法");
         cp=this.getContentPane();
         cp.setLayout(new BorderLayout(3,3));
         jpnc.add(jbt1);
@@ -63,8 +64,8 @@ public class MainFrame extends JFrame {
         jbt3.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                jtaL.setText(null);
-                jtaR.setText(null);
+                jtaL.setText("");
+                jtaR.setText("");
             }
         });
         jbt4.addActionListener(new AbstractAction() {
